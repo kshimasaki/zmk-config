@@ -67,16 +67,16 @@
 
         ide_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |    BTCLR   |     BT0      |     BT1      |      BT2     |      BT3      |      BT4      |                            |              |              |            |             |             |             |
-// |            |     INS      |     PSCR     |     GUI      |               | IDE_TERMFOCUS |                            |     PGUP     |              |      ^     |             |             |             |
-// |            |     ALT      |     CTRL     |    FOCFLS    | IDE_FILEFOCUS |     CAPS      |                            |     PGDN     |      <-      |      v     |      ->     |             |             |
-// |            |     UNDO     |     CUT      |     COPY     |     PASTE     | IDE_SBARFOCUS |            |  |            |              |   IDE_MENU   |            |             |   BRIGHT    |  DIM        |
-//                             |              |              |               |               |            |  |            |              |              |            |             |                       
+// |    BTCLR   |     BT0      |     BT1      |      BT2     |      BT3      |      BT4      |                            |              |              |            |           |             |             |
+// |            |     INS      |     PSCR     |     GUI      |               | IDE_TERMFOCUS |                            |     PGUP     |              |      ^     |           |             |             |
+// |            |     ALT      |     CTRL     |    FOCFLS    | IDE_FILEFOCUS |     CAPS      |                            |     PGDN     |      <-      |      v     |     ->    |             |             |
+// |            |     UNDO     |     CUT      |     COPY     |     PASTE     | IDE_SBARFOCUS |            |  |            |              |   IDE_MENU   |            |           |   BRIGHT    |  DIM        |
+//                             |              |              |               |               |            |  |            |              |              |            |           |                       
             bindings = <
-    &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4                                 &none           &none          &none       &none         &none          &none
-    &none       &kp INS         &kp PSCRN      &kp K_CMENU    &none           &IDE_TERMFOCUS                               &kp PG_UP       &none          &kp UP      &none         &none          &none
-    &none       &kp LALT        &kp LCTRL      &none          &IDE_FILEFOCUS  &none                                        &kp PG_DN       &kp LEFT       &kp DOWN    &kp RIGHT     &none          &none
-    &none       &kp K_UNDO      &kp K_CUT      &kp K_COPY     &kp K_PASTE     &IDE_SBARFOCUS   &none           &none       &none           &IDE_MENU      &none       &none         &C_BRI_UP      &C_BRI_DN
+    &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4                                 &none           &none          &none       &none       &none          &none
+    &none       &kp INS         &kp PSCRN      &kp K_CMENU    &none           LC(LA(LS(t)))                                &none           &none          &none       &none       &none          &none
+    &none       &kp LALT        &kp LCTRL      &none          LC(LA(LS(f)))   &none                                        &kp PG_DN       &kp LEFT       &kp DOWN    &kp RIGHT   &none          &none
+    &none       &kp K_UNDO      &kp K_CUT      &kp K_COPY     &kp K_PASTE     LC(LA(LS(b)))    &none           &none       &none           &IDE_MENU      &none       &none       &C_BRI_UP      &C_BRI_DN
                                 &none          &none          &none           &none            &none           &none       &none           &none          &none       &none                               
             >;
 
