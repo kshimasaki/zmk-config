@@ -10,9 +10,9 @@
 
 #define MO_TOG(layer) &mo_tog layer layer
 #define IDE_MENU LC(LA(LS(m)))
-#define IDE_TERMFOCUS LC(LA(LS(t)))
-#define IDE_FILEFOCUS LC(LA(LS(f)))
-#define IDE_SBARFOCUS LC(LA(LS(b)))
+#define IDE_TERMFOCUS LC(LA(LS(&kp T)))
+#define IDE_FILEFOCUS LC(LA(LS(&kp F)))
+#define IDE_SBARFOCUS LC(LA(LS(&kp B)))
 
 / {
     behaviors {
@@ -74,7 +74,7 @@
 //              |      |       |             |             |      |  |      |      |        |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                           &none       &none       &none       &none       &none       &none
-&none      &kp INS      &kp PSCRN    &kp K_CMENU  &none        &IDE_TERMFOCUS                         &kp PG_UP   &none       &kp UP      &none       &kp N0      &none
+&none      &kp INS      &kp PSCRN    &kp K_CMENU  &none        &IDE_TERMFOCUS                         &kp PG_UP   &none       &kp UP      &none       &none       &none
 &none      &kp LALT     &kp LCTRL    &kp LC(F)    &none        &kp CLCK                               &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none
 &none      &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &none           &none       &none      &none       &IDE_MENU   &none       &none       &C_BRI_UP   &C_BRI_DN
                         &none        &none        &none        &none           &none       &none      &none       &none       &none       &none
