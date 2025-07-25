@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define MO_TOG(layer) &mo_tog layer layer
-#define IDE_MENU &kp LC(LA(LS(m)))
+#define IDE_MENU &kp LC(LA(LS(M)))
 #define IDE_TERMFOCUS &kp LC(LA(LS(T)))
 #define IDE_FILEFOCUS &kp LC(LA(LS(F)))
 #define IDE_SBARFOCUS &kp LC(LA(LS(B)))
