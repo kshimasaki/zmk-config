@@ -8,11 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#DEFINE MO_TOG(layer) &mo_tog layer layer
-#DEFINE IDE_MENU LC(LA(LS(m)))
-#DEFINE IDE_TERMFOCUS LC(LA(LS(t)))
-#DEFINE IDE_FILEFOCUS LC(LA(LS(f)))
-#DEFINE IDE_SBARFOCUS LC(LA(LS(b)))
+#define MO_TOG(layer) &mo_tog layer layer
+#define IDE_MENU LC(LA(LS(m)))
+#define IDE_TERMFOCUS LC(LA(LS(t)))
+#define IDE_FILEFOCUS LC(LA(LS(f)))
+#define IDE_SBARFOCUS LC(LA(LS(b)))
 
 / {
     behaviors {
