@@ -76,7 +76,7 @@
     &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4                                 &none           &none          &none       &none       &none          &none
     &none       &kp INS         &kp PSCRN      &kp K_CMENU    &none           IDE_TERMFOCUS                                &none           &none          &none       &none       &none          &none
     &none       &kp LALT        &kp LCTRL      &none          IDE_FILEFOCUS   &none                                        &kp PG_DN       &kp LEFT       &kp DOWN    &kp RIGHT   &none          &none
-    &none       &kp K_UNDO      &kp K_CUT      &kp K_COPY     &kp K_PASTE     IDE_SBARFOCUS   &none           &none        &none           IDE_MENU       &none       &none       &C_BRI_UP      &C_BRI_DN
+    &none       &kp K_UNDO      &kp K_CUT      &kp K_COPY     &kp K_PASTE     IDE_SBARFOCUS   &none           &none        &none           IDE_MENU       &none       &none       &kp C_BRI_UP   &kp C_BRI_DN
                                 &none          &none          &none           &none           &none           &none        &none           &none          &none       &none                               
             >;
 
